@@ -34,16 +34,22 @@ body{
     font-size: 16px;
 }
 
+.icon-facebook{
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 3px 1px 2px #e441a0;
+    font-size: 16px; 
+}
+
   ul { 
     padding: 0; 
     list-style: none; 
     display: table;
-    width: 600px;
+    width: auto;
   }
   li { 
     display: table-cell; 
     position: relative; 
-    padding: 15px 0;
+    padding: 8px 0;
   }
   .nav-link {
     color: #fff;
@@ -73,6 +79,8 @@ body{
     width: 100%; 
     left: 0; 
   }
+
+  
 .navbar{
     background-image: linear-gradient(to right, #0f491d, transparent);
 }
@@ -128,6 +136,71 @@ div.desc {
     right: 0;
     z-index: -5;
 }
+
+.eggplant-2{
+    position: absolute;
+    width: 770px;
+    height: 590px;
+    background-image: url("img/eggplant-menu.png");
+    background-position: 0 0;
+    bottom: 30%;
+    right: 20%;
+    z-index: -5;
+    transform: rotate(30deg);
+}
+
+.fb-nav{
+   margin-right: auto;
+}
+
+input{
+    font-size: 14px;
+    width: 100%;
+    max-width: 270px;
+    background-color: white;
+    color: black;
+    padding: 4px;
+    outline: none;
+    border-radius: 12px;
+}
+
+#ckb1{
+    display: block;
+}
+
+textarea{
+    font-size: 14px;
+    width: 100%;
+    max-width: 270px;
+    height: 70px;
+    padding: 4px;
+    outline-color: #e441a0;
+    outline-width: 8px;
+    border-radius: 12px;
+}
+
+.contact100-form-btn{
+    font-size: 18px;
+    color: white;
+    background-color: #e441a0;
+    padding: 4px;
+    border-radius: 12px;
+    transition: ease-in-out 0.3s;
+}
+
+.contact100-form-btn:hover{
+    font-size: 18px;
+    color: #e441a0;
+    background-color: white;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+.wrap-contact100{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*
 .container-3{
     position: absolute;
@@ -141,9 +214,20 @@ div.desc {
 }
 */
 
-@media only screen and (max-width: 700px) {
-    .foodGallery {
-      display: none;
+@media only screen and (max-width: 768px) {
+
+ .eggplant {
+  display: none;
+ }
+
+ .eggplant-2 {
+  display: none;
+ }
+}
+
+@media only screen and (max-width: 576px) {
+.foodGallery {
+  display: none;
  }
 }
 
