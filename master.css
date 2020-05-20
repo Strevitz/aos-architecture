@@ -11,10 +11,6 @@ body{
     margin-right: 40px;
 }
 
-#telefon:hover{
-    color: #e441a0;
-}
-
 #sale{
     transition: ease-in-out 0.5s;
 }

@@ -16,3 +16,14 @@ $('.row-1').mouseenter(function(){
     })
 
 */
+var tel = $('#telefon');
+tel.on('mouseenter mouseleave', function(e){
+    $(this).toggleClass('text-danger');
+    $(this).css('cursor', 'pointer');
+});
+
+var td = $('td');
+td.on('mouseenter mouseleave', function(e){
+    $(this).toggleClass('text-white-50');
+
+});
