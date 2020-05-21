@@ -1,65 +1,42 @@
-body{
-    color: white;
-    background-image: linear-gradient(to bottom right, #2f5edd, #1d9728, #105822);
+* {
+    box-sizing: border-box;
 }
 
-#telefon{
-    color: white;
-    text-decoration: none;
-    font-size: 16px; 
-    text-shadow: 5px 1px 5px #e441a0;
-    margin-right: 40px;
-}
+/* navbar items */
 
-#sale{
-    transition: ease-in-out 0.5s;
-}
-
-#sale:hover{
-    transform: scale(1.1);
-}
-
-.row-1{
-    background-image: linear-gradient(to left, transparent, #0f471d);
-    border-radius: 40px;
-}
-
-.nav-link{
+.nav-link, .icon-facebook{
     font-family: 'Open Sans', sans-serif;
     text-shadow: 3px 1px 2px #e441a0;
     font-size: 16px;
 }
 
-.icon-facebook{
-    font-family: 'Open Sans', sans-serif;
-    text-shadow: 3px 1px 2px #e441a0;
-    font-size: 16px; 
-}
-
-  ul { 
+ul { 
     padding: 0; 
     list-style: none; 
     display: table;
     width: auto;
-  }
-  li { 
+}
+
+li { 
     display: table-cell; 
     position: relative; 
     padding: 8px 0;
-  }
-  .nav-link {
+}
+
+.nav-link {
     color: #fff;
     text-decoration: none;
     letter-spacing: 0.15em;
-    
     display: inline-block;
     padding: 15px 20px;
     position: relative;
-  }
-  .nav-link:hover{
-      color: white;
-  }
-  .nav-link:after {    
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.nav-link:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -70,15 +47,11 @@ body{
     background: #e441a0;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
-  }
-  .nav-link:hover:after { 
+}
+
+.nav-link:hover:after { 
     width: 100%; 
     left: 0; 
-  }
-
-  
-.navbar{
-    background-image: linear-gradient(to right, #0f491d, transparent);
 }
 
 /* food gallery */
@@ -102,9 +75,9 @@ div.gallery img {
     width: 90%;
     height: auto;
     border-radius: 18px;
-    -webkit-box-shadow: -15px -15px 40px -5px rgba(150,150,150,1);
-    -moz-box-shadow: -15px -15px 40px -5px rgba(150,150,150,1);
-    box-shadow: -15px -15px 40px -5px rgba(150,150,150,1);
+    -webkit-box-shadow: -15px -15px 40px -5px #969696;
+    -moz-box-shadow: -15px -15px 40px -5px #969696;
+    box-shadow: -15px -15px 40px -5px #969696;
 }
   
 div.desc {
@@ -112,15 +85,13 @@ div.desc {
     text-align: center;
 }
   
-* {
-    box-sizing: border-box;
-}
-  
 .responsive {
     text-align: center;
     float: left;
     width: 17%;
 }
+
+/* background img */
 
 .eggplant{
     position: absolute;
@@ -145,9 +116,7 @@ div.desc {
     transform: rotate(30deg);
 }
 
-.fb-nav{
-   margin-right: auto;
-}
+/* contact form */
 
 input{
     font-size: 14px;
@@ -158,10 +127,6 @@ input{
     padding: 4px;
     outline: none;
     border-radius: 12px;
-}
-
-#ckb1{
-    display: block;
 }
 
 textarea{
@@ -197,35 +162,21 @@ textarea{
     margin-right: auto;
 }
 
-/*
-.container-3{
-    position: absolute;
-    width: 220px;
-    height: 110px;
-    background-image: url("img/boom-2.png");
-    background-position: 0 100;
-    top: 10px;
-    right: 20px;
-    z-index: -5;
-}
-*/
+/* responsiveness settings */
 
 @media only screen and (max-width: 768px) {
-
- .eggplant {
-  display: none;
- }
-
- .eggplant-2 {
-  display: none;
+ .eggplant, .eggplant-2 {
+    display: none;
  }
 }
 
 @media only screen and (max-width: 576px) {
 .foodGallery {
-  display: none;
+    display: none;
  }
 }
+
+/* special fonts */
 
 @font-face{
     font-family: 'arabic';

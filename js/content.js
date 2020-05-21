@@ -1,29 +1,54 @@
-    // hidden search input
-    
-   /* $( '#main' ).hide();
+$(document).ready(function() {
 
-    $( "#eggplant" ).hover(function() {
+    var body = $('body');
+    body.addClass('vh-100 vw-100');
+    body.css('color', 'white')
+        .css('background-image', 'linear-gradient(to bottom right, #2f5edd, #1d9728, #105822)');
 
-        $( '#main' ).show( 1000 );
+    var navbar = $('.navbar');
+    navbar.css('background-image', 'linear-gradient(to right, #0f491d, transparent)');
 
+    var logo = $('#logo');
+    logo.css('font-family', 'arabic')
+        .css('font-size', '70px')
+        .css('text-shadow', '5px 1px 5px #e441a0')
+        .css('padding-left', '40px');
+
+    var copyright = $('.copyright');
+    copyright.addClass('col-6 d-inline-block text-right mt-4');
+
+    var row1 = $('.row-1');
+    row1.addClass('no-gutters ml-5 mr-5 mb-5 p-3');
+    row1.css('background-image', 'linear-gradient(to left, transparent, #0f471d)')
+        .css('border-radius', '40px');
+
+    var tel = $('#telefon');
+    tel.css('color', 'white')
+       .css('text-decoration', 'none')
+       .css('font-size', '16px')
+       .css('text-shadow', '5px 1px 5px #e441a0')
+       .css('margin-right', '40px');
+    tel.hover(
+        function(){
+        $(this).css('color', '#e441a0')
+               .css('cursor', 'pointer');
+        },
+        function(){
+        $(this).css('color', '#fff')
+               .css('cursor', 'none');
+        }
+    );
+
+    var strong = $('strong');
+    strong.on('mouseenter', function(e){
+        $('strong').css('color', '#e441a0')
+                   .css('font-size', '19px');
     });
 
-$('.row-1').mouseenter(function(){
-    $(this).toggleClass("bg-success");
-})
-.mouseleave(function(){
-    $(this).toggleClass("bg-success");  
-    })
-
-*/
-var tel = $('#telefon');
-tel.on('mouseenter mouseleave', function(e){
-    $(this).toggleClass('text-danger');
-    $(this).css('cursor', 'pointer');
-});
-
-var td = $('td');
-td.on('mouseenter mouseleave', function(e){
-    $(this).toggleClass('text-white-50');
+    var strong = $('strong');
+    strong.on('mouseleave', function(e){
+    $('strong').css('color', 'white')
+               .css('font-size', '16px');
+    });
 
 });
