@@ -1,9 +1,7 @@
-$(document).ready(function() {
+$(function() {
 
     var body = $('body');
     body.addClass('vh-100 vw-100');
-    body.css('color', 'white')
-        .css('background-image', 'linear-gradient(to bottom right, #2f5edd, #1d9728, #105822)');
 
     var navbar = $('.navbar');
     navbar.css('background-image', 'linear-gradient(to right, #0f491d, transparent)');
@@ -16,11 +14,14 @@ $(document).ready(function() {
 
     var copyright = $('.copyright');
     copyright.addClass('col-6 d-inline-block text-right mt-4');
+    copyright.effect("slide", {direction: "right"}, "slow");
 
     var row1 = $('.row-1');
     row1.addClass('no-gutters ml-5 mr-5 mb-5 p-3');
+    
     row1.css('background-image', 'linear-gradient(to left, transparent, #0f471d)')
         .css('border-radius', '40px');
+    row1.effect("slide", {direction: "right"}, "slow");
 
     var tel = $('#telefon');
     tel.css('color', 'white')
@@ -50,5 +51,18 @@ $(document).ready(function() {
     $('strong').css('color', 'white')
                .css('font-size', '16px');
     });
+    
+    $( "#dialog" ).dialog({
+        autoOpen: false,
+	    width: 400,   
+    });
+
+    $(".contact100-form-btn").click(function(){
+        $( "#dialog" ).dialog('open');
+    });
+
+    $( "#tooltip" ).tooltip();
+
+    
 
 });
