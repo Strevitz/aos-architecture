@@ -1,3 +1,9 @@
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-23581568-13');
+
 $(function() {
 
     var body = $('body');
@@ -18,10 +24,12 @@ $(function() {
 
     var row1 = $('.row-1');
     row1.addClass('no-gutters ml-5 mr-5 mb-5 p-3');
-    
     row1.css('background-image', 'linear-gradient(to left, transparent, #0f471d)')
         .css('border-radius', '40px');
     row1.effect("slide", {direction: "right"}, "slow");
+
+    var foodGallery = $('.responsive');
+    foodGallery.effect("bounce", 1000);
 
     var tel = $('#telefon');
     tel.css('color', 'white')
@@ -43,13 +51,13 @@ $(function() {
     var strong = $('strong');
     strong.on('mouseenter', function(e){
         $('strong').css('color', '#e441a0')
-                   .css('font-size', '19px');
+        $('strong').animate({ marginLeft: 10,  marginRight: 10}, 'fast');
     });
 
     var strong = $('strong');
     strong.on('mouseleave', function(e){
     $('strong').css('color', 'white')
-               .css('font-size', '16px');
+               .animate({ marginLeft: 0, marginRight: 0}, 'slow');
     });
     
     $( "#dialog" ).dialog({
@@ -62,7 +70,5 @@ $(function() {
     });
 
     $( "#tooltip" ).tooltip();
-
-    
 
 });
