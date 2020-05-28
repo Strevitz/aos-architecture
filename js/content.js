@@ -59,10 +59,10 @@ $(function() {
     $('strong').css('color', 'white')
                .animate({ marginLeft: 0, marginRight: 0}, 'slow');
     });
-    
+
     $( "#dialog" ).dialog({
         autoOpen: false,
-	    width: 400,   
+	    width: 400,
     });
 
     $(".contact100-form-btn").click(function(){
