@@ -1,15 +1,14 @@
 {
-  "name": "tabuli_restaurant",
+  "name": "aos_architektura",
   "version": "1.0.0",
   "description": "",
-  "main": "content.js",
+  "main": "index.js",
   "scripts": {
-    "start": "lite-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Arthur Strzewiczek",
   "license": "ISC",
-  "devDependencies": {
-    "lite-server": "2.5.4"
+  "dependencies": {
+    "node-modules": "^1.0.1"
   }
 }

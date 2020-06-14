@@ -1,0 +1,29 @@
+{
+    "name": "news-ticker",
+    "title": "jQuery News Ticker",
+    "description": "jQuery News Ticker is a jQuery plugin for put the News-Ticker in your websites",
+    "keywords": [
+        "news",
+        "ticker"
+    ],
+    "version": "0.0.2",
+    "author": {
+        "name": "Tetsuwo OISHI",
+        "url": "http://tetsuwo.tumblr.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://github.com/tetsuwo/jquery-news-ticker/blob/master/MIT-LICENSE.txt"
+        }
+    ],
+    "files": [
+        "src/js/jquery.news-ticker.js"
+    ],
+    "bugs": "http://github.com/tetsuwo/jquery-news-ticker/issues",
+    "homepage": "http://github.com/tetsuwo/jquery-news-ticker",
+    "docs": "https://github.com/tetsuwo/jquery-news-ticker/blob/master/README.md",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}

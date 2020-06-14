@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Test Runner</title>
+        <link rel="stylesheet" href="lib/jasmine-1.2.0/jasmine.css" />
+        <script src="lib/jasmine-1.2.0/jasmine.js"></script>
+        <script src="lib/jasmine-1.2.0/jasmine-html.js"></script>
+        <script src="lib/jasmine-1.2.0/jasmine-console.js"></script>
+        <script src="spec/SpecHelper.js"></script>
+        <script src="jasmine-prepare.js"></script>
+        <!-- test target code... -->
+        <script src="../lib/jquery-1.9.0.min.js"></script>
+        <link rel="stylesheet" href="../src/css/style.css">
+        <script src="../src/js/jquery.news-ticker.js"></script>
+    </head>
+    <body>
+        <div style="width: 300px; margin: 0 auto;">
+            <h1 style="margin-bottom: .5em;">jQuery News Ticker - NEWS!</h1>
+
+            <div id="news-ticker-1" class="jq-news-ticker">
+                <ul class="jq-news-ticker-items">
+                    <li class="jq-news-ticker-item"><a href="#">【コラム】◯◯◯◯が語る、監督交代と△△△△△△△の変化</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">英記者「現状、◯◯は△△の控え。しかし成功できると確信している」</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">◯◯に海外からオファー続々　△△△△再獲得熱望</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">◯◯◯、アシストも「“あんぱい”のプレーを求められた」＝同僚のオランダ代表入りを喜ぶ</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">◯◯◯◯◯◯、ボーナス未払いで選手から不満の声が噴出「今度は△△△△が応える番」</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">首位決戦のイタリア・ダービー、△△紙は◯◯の先発復帰を予想</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">スピード違反で罰金の◯◯◯◯、「財産がない」と主張した弁護士をクビに…判決を受け入れへ</a></li>
+                </ul>
+            </div>
+
+            <!--<div id="news-ticker-2" class="jq-news-ticker">
+                <ul class="jq-news-ticker-items">
+                    <li class="jq-news-ticker-item"><a href="#">1</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">2</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">3</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">4</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">5</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">6</a></li>
+                    <li class="jq-news-ticker-item"><a href="#">7</a></li>
+                </ul>
+            </div>-->
+        </div>
+
+        <!-- below test code... -->
+        <script src="test.js"></script>
+    </body>
+</html>
